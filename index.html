@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-container">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" class="input-value" min="0" step="1" value="0"
+                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+            <button class="btn-convert">Convert</button>
+        </div>
+        <div class="results-container">
+            <div class="one-result" id="length">
+
+            </div>
+            <div class="one-result" id="volume">
+
+            </div>
+            <div class="one-result" id="mass">
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
